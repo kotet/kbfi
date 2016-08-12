@@ -1,0 +1,9 @@
+{
+	"name": "kbfi",
+	"authors": [
+		"kotet"
+	],
+	"description": "brainf*ck interpreter",
+	"copyright": "Copyright © 2016, kotet",
+	"license": "CC0"
+}
