@@ -59,13 +59,6 @@ void main(string[] args)
                         if(code[codeptr] == '[') loopnest--;
                         if(code[codeptr] == ']') loopnest++;
                     }while(0 < loopnest);
-                   /* codeptr--;
-                    for(int loopnest=1;0 < loopnest;codeptr--)
-                    {
-                        if(code[codeptr] == '[') loopnest--;
-                        if(code[codeptr] == ']') loopnest++;
-                    }
-                    codeptr++;*/
                 }
                 break;
             default:
