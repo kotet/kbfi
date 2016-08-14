@@ -1,3 +1,4 @@
+//たたき台
 module interpreter;
 
 import std.conv;

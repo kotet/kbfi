@@ -1,7 +1,7 @@
 import std.stdio;
-import std.getopt;
 import std.file;
-import interpreter;
+
+import vm;
 
 const BUFFSIZE = 30000;
 
@@ -9,8 +9,14 @@ void main(string[] args)
 {
     string filename = args[1];
     string code = readText(filename);
-    
-    auto interpreter = new Interpreter(code,BUFFSIZE);
-    interpreter.run();
+
+    auto vm = new VirtualMachine(code,BUFFSIZE);
+    vm.parse();
+    try
+    {
+        vm.run();
+    } catch (Exception e){
+        return;
+    }
 }
 
