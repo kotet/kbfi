@@ -5,5 +5,5 @@
 	],
 	"description": "brainf*ck interpreter",
 	"copyright": "Copyright © 2016, kotet",
-	"license": "CC0"
+	"license": "MIT"
 }
